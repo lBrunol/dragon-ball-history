@@ -1,5 +1,8 @@
 # História do Dragon Ball
-A ideia do projeto é montar uma página estática com next.js com a história do Anime Dragon Ball e seus personagens.
+A ideia do projeto é montar uma página estática com next.js com a história, personagens e algumas curiosidades do Anime Dragon Ball.
+
+# Protótipo (em construção)
+[Figma](https://www.figma.com/file/aTcA8vBr84ikKoTt81mhG0/dragon-ball-history?node-id=1%3A2)
 
 # Rodar em dev
 
