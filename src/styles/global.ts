@@ -8,11 +8,18 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Bungee', cursive;
   }
+  :root{
+    --accent-color: #F2C864;
+    --text-color: #000;
+    --highlight-color: #FF8D00;
+    --menu-text-color: #FFF;
+  }
+
   html {
-    font-size: 62.5%;
+    font-size: 16px;
   }
   body {
-    font-family: 'Roboto';
+    font-family: 'Bungee', 'Arial';
   }
 
 `
