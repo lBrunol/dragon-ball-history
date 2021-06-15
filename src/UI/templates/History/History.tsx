@@ -1,5 +1,9 @@
 import * as S from './Styles'
 
-export default function History() {
-  return <S.Container></S.Container>
+type Props = {
+  children: JSX.Element
+}
+
+export default function History({ children }: Props) {
+  return <S.Container>{children}</S.Container>
 }

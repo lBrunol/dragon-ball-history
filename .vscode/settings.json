@@ -3,6 +3,6 @@
   "editor.codeActionsOnSave": {
     // For ESLint
     "source.fixAll.eslint": true,
-    "source.fixAll.tseslint": true,
+    "source.fixAll.tslint": true,
   }
 }

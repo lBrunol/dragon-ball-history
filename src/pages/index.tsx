@@ -1,4 +1,5 @@
 import Header from 'UI/molecules/Header/Header'
+import Modal from 'UI/molecules/Modal/Modal'
 import History from 'UI/templates/History/History'
 
 type Props = {
@@ -7,10 +8,9 @@ type Props = {
 
 export default function Home({ title = 'Teste' }: Props) {
   return (
-    <div>
-      <h1>{title}</h1>
+    <History>
       <Header></Header>
-      <History></History>
-    </div>
+      <Modal></Modal>
+    </History>
   )
 }

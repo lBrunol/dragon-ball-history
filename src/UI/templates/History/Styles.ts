@@ -1,8 +1,13 @@
 import styled from 'styled-components'
-import background from '../../../assets/images/character-bg.png'
+import background from '../../../assets/images/history-bg.png'
 
 export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
   background-image: url(${background});
-  width: 100vw;
-  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
 `

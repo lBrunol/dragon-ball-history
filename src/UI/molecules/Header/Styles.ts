@@ -5,9 +5,12 @@ export const Header = styled.header`
 `
 
 export const NavMenuList = styled.ul`
+  margin-top: 3rem;
+  margin-left: 2rem;
   max-width: 250px;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 `
 
 export const NavMenuItem = styled.li`
@@ -17,6 +20,15 @@ export const NavMenuItem = styled.li`
 export const NavMenuLink = styled.a`
   color: var(--menu-text-color);
   font-weight: bold;
-  font-size: 1.275rem;
+  font-size: 1.25rem;
   line-height: 1.5rem;
+  text-decoration: none;
+  padding-bottom: .75rem;
+  display: block;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--accent-color);
+  }
 `

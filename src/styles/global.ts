@@ -1,12 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bungee', cursive;
   }
   :root{
     --accent-color: #F2C864;
@@ -15,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --menu-text-color: #FFF;
   }
 
-  html {
+  html {\
     font-size: 16px;
   }
   body {
