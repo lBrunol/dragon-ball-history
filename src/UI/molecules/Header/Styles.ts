@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Header = styled.header`
   width: 100%;
+  position: fixed;
 `
 
 export const NavMenuList = styled.ul`
@@ -23,7 +24,7 @@ export const NavMenuLink = styled.a`
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-decoration: none;
-  padding-bottom: .75rem;
+  padding-bottom: 0.75rem;
   display: block;
 
   &:hover,

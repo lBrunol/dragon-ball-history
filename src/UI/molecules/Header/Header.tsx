@@ -1,4 +1,5 @@
 import * as S from './Styles'
+import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -6,13 +7,19 @@ export default function Header() {
       <nav>
         <S.NavMenuList>
           <S.NavMenuItem>
-            <S.NavMenuLink href="#">História</S.NavMenuLink>
+            <Link href="/history">
+              <S.NavMenuLink>História</S.NavMenuLink>
+            </Link>
           </S.NavMenuItem>
           <S.NavMenuItem>
-            <S.NavMenuLink href="#">Personagens</S.NavMenuLink>
+            <Link href="">
+              <S.NavMenuLink href="#">Personagens</S.NavMenuLink>
+            </Link>
           </S.NavMenuItem>
           <S.NavMenuItem>
-            <S.NavMenuLink href="#">Curiosidades</S.NavMenuLink>
+            <Link href="/curiosity">
+              <S.NavMenuLink href="#">Curiosidades</S.NavMenuLink>
+            </Link>
           </S.NavMenuItem>
         </S.NavMenuList>
       </nav>

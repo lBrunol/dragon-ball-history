@@ -6,12 +6,12 @@ type Props = {
   children: JSX.Element
 }
 
-export default function History() {
+export default function Curiosity() {
   return (
     <S.Container>
       <>
         <Centralize>
-          <Modal title="História">
+          <Modal title="Curiosidades">
             <>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

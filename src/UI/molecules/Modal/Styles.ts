@@ -1,9 +1,15 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-export const Modal = styled.div`
+type ModalProps = {
+  centralized: boolean
+}
+
+export const Modal = styled.div<ModalProps>`
   display: flex;
   justify-content: center;
   width: 100%;
+  animation: scale 0.5s ease-in-out;
+  /* position: ${(props) => (props.centralized ? 'absolute' : 'initial')}; */
 `
 
 export const ModalDialog = styled.div`
@@ -27,18 +33,39 @@ export const ModalDialog = styled.div`
 `
 export const ModalContent = styled.div`
   padding: 2rem;
-  border: 4px solid #000;
+  border: 2px solid #000;
   background-color: #fff;
   max-width: 800px;
-  height: 600px;
   width: 100%;
-  overflow: auto;
 `
 
 export const ModalHeader = styled.div`
   width: 100%;
+  font-size: 2rem;
+  text-align: center;
 `
 
 export const ModalBody = styled.div`
   font-family: 'Roboto';
+  overflow: auto;
+  height: 500px;
+
+  /* Works on Firefox */
+  & {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #c4c4c4;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+  }
 `
