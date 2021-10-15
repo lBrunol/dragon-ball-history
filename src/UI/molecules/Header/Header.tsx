@@ -12,13 +12,13 @@ export default function Header() {
             </Link>
           </S.NavMenuItem>
           <S.NavMenuItem>
-            <Link href="">
-              <S.NavMenuLink href="#">Personagens</S.NavMenuLink>
+            <Link href="/characters">
+              <S.NavMenuLink>Personagens</S.NavMenuLink>
             </Link>
           </S.NavMenuItem>
           <S.NavMenuItem>
             <Link href="/curiosity">
-              <S.NavMenuLink href="#">Curiosidades</S.NavMenuLink>
+              <S.NavMenuLink>Curiosidades</S.NavMenuLink>
             </Link>
           </S.NavMenuItem>
         </S.NavMenuList>
